@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', serif;
+}
+
+body {
+  background-color: #0d64aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 25px;
+  color: #0d64aa;
+  text-align: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+
+.start-screen {
+  text-align: center;
+}
+
+.start-btn {
+  background: #0d64aa;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.start-btn:hover {
+  background: #084b8a;
+}
+
+.quiz {
+  display: none;
+  text-align: center;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer {
+  order: 2;
+  color: #fff;
+  background-color: #0d64aa;
+  border-radius: 50%;
+  padding: 10px 12px;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  margin: 20px 0;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #0d64aa;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.question {
+  font-size: 17px;
+  color: #0d64aa;
+  font-weight: 600;
+  margin: 15px 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.answer-buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  background: #fff;
+  color: #222;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+.next-btn {
+  background: #0d64aa;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: none;
+  padding: 10px;
+  margin: 20px auto 0;
+  cursor: pointer;
+  display: block;
+}
+
+.correct {
+  background: #9aeabc;
+}
+
+.incorrect {
+  background: #ff9393;
+}
